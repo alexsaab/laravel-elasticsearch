@@ -1,4 +1,4 @@
-<?php namespace Cviebrock\LaravelElasticsearch;
+<?php namespace Alexsaab\LaravelElasticsearch;
 
 use Illuminate\Support\Facades\Facade as BaseFacade;
 
@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Facade as BaseFacade;
 /**
  * Class Facade
  *
- * @package Cviebrock\LaravelElasticsearch
+ * @package Alexsaab\LaravelElasticsearch
  */
 class Facade extends BaseFacade
 {

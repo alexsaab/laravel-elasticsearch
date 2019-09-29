@@ -1,6 +1,6 @@
 Thank you for helping to make this package better!
 
-Please make sure you've read [CONTRIBUTING.md](https://github.com/cviebrock/laravel-elasticsearch/blob/master/CONTRIBUTING.md) 
+Please make sure you've read [CONTRIBUTING.md](https://github.com/alexsaab/laravel-elasticsearch/blob/master/CONTRIBUTING.md) 
 before submitting your pull request, and that you have:
 
 - [ ] provided a rationale for your change (I try not to add features that are going to have a limited user-base)

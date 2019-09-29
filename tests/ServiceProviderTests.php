@@ -1,7 +1,7 @@
-<?php namespace Cviebrock\LaravelElasticsearch\Tests;
+<?php namespace Alexsaab\LaravelElasticsearch\Tests;
 
-use Cviebrock\LaravelElasticsearch\Factory;
-use Cviebrock\LaravelElasticsearch\Manager;
+use Alexsaab\LaravelElasticsearch\Factory;
+use Alexsaab\LaravelElasticsearch\Manager;
 use Elasticsearch;
 use Elasticsearch\Client;
 

@@ -2,11 +2,11 @@
 
 An easy way to use the [official Elastic Search client](https://github.com/elastic/elasticsearch-php) in your Laravel or Lumen applications.
 
-[![Build Status](https://travis-ci.org/cviebrock/laravel-elasticsearch.svg)](https://travis-ci.org/cviebrock/laravel-elasticsearch)
-[![Total Downloads](https://poser.pugx.org/cviebrock/laravel-elasticsearch/downloads.png)](https://packagist.org/packages/cviebrock/laravel-elasticsearch)
-[![Latest Stable Version](https://poser.pugx.org/cviebrock/laravel-elasticsearch/v/stable.png)](https://packagist.org/packages/cviebrock/laravel-elasticsearch)
-[![Latest Stable Version](https://poser.pugx.org/cviebrock/laravel-elasticsearch/v/unstable.png)](https://packagist.org/packages/cviebrock/laravel-elasticsearch)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/cviebrock/laravel-elasticsearch/badges/quality-score.png?format=flat)](https://scrutinizer-ci.com/g/cviebrock/laravel-elasticsearch)
+[![Build Status](https://travis-ci.org/alexsaab/laravel-elasticsearch.svg)](https://travis-ci.org/alexsaab/laravel-elasticsearch)
+[![Total Downloads](https://poser.pugx.org/alexsaab/laravel-elasticsearch/downloads.png)](https://packagist.org/packages/alexsaab/laravel-elasticsearch)
+[![Latest Stable Version](https://poser.pugx.org/alexsaab/laravel-elasticsearch/v/stable.png)](https://packagist.org/packages/alexsaab/laravel-elasticsearch)
+[![Latest Stable Version](https://poser.pugx.org/alexsaab/laravel-elasticsearch/v/unstable.png)](https://packagist.org/packages/alexsaab/laravel-elasticsearch)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/alexsaab/laravel-elasticsearch/badges/quality-score.png?format=flat)](https://scrutinizer-ci.com/g/alexsaab/laravel-elasticsearch)
 
 * [Installation and Configuration](#installation-and-configuration)
 * [Usage](#usage)
@@ -18,16 +18,16 @@ An easy way to use the [official Elastic Search client](https://github.com/elast
 
 ## Installation and Configuration
 
-Install the current version of the `cviebrock/laravel-elasticsearch` package via composer:
+Install the current version of the `alexsaab/laravel-elasticsearch` package via composer:
 
 ```sh
-composer require cviebrock/laravel-elasticsearch
+composer require alexsaab/laravel-elasticsearch
 ```
 
 If you are using ElasticSearch version 5, then install version 2 of this package:
 
 ```sh
-composer require cviebrock/laravel-elasticsearch:^2
+composer require alexsaab/laravel-elasticsearch:^2
 ```
 
 ### Laravel
@@ -37,7 +37,7 @@ The package's service provider will automatically register its service provider.
 Publish the configuration file:
 
 ```sh
-php artisan vendor:publish --provider="Cviebrock\LaravelElasticsearch\ServiceProvider"
+php artisan vendor:publish --provider="Alexsaab\LaravelElasticsearch\ServiceProvider"
 ```
 
 ##### Alternative configuration method via .env file
@@ -71,7 +71,7 @@ AWS_SECRET_ACCESS_KEY=...
 If you work with Lumen, please register the service provider and configuration in `bootstrap/app.php`:
 
 ```php
-$app->register(Cviebrock\LaravelElasticsearch\ServiceProvider::class);
+$app->register(Alexsaab\LaravelElasticsearch\ServiceProvider::class);
 $app->configure('elasticsearch');
 ```
 
@@ -118,7 +118,7 @@ Lumen users who wish to use Facades can do so by editing the
 ```php
 $app->withFacades(true, [
     ...
-    Cviebrock\LaravelElasticsearch\Facade::class => 'Elasticsearch',
+    Alexsaab\LaravelElasticsearch\Facade::class => 'Elasticsearch',
     ...
 ]);
 ```
@@ -128,7 +128,7 @@ or the application container in order to get the ES service object:
 
 ```php
 // using injection:
-public function handle(\Cviebrock\LaravelElasticsearch\Manager $elasticsearch)
+public function handle(\Alexsaab\LaravelElasticsearch\Manager $elasticsearch)
 {
     $elasticsearch->ping();
 }
@@ -182,16 +182,16 @@ and on sites like [Stack Overflow](https://stackoverflow.com/questions/tagged/el
 
 ## Bugs, Suggestions, Contributions and Support
 
-Thanks to [everyone](https://github.com/cviebrock/laravel-elasticsearch/graphs/contributors)
+Thanks to [everyone](https://github.com/alexsaab/laravel-elasticsearch/graphs/contributors)
 who has contributed to this project!
 
 Special thanks to 
-[JetBrains](https://www.jetbrains.com/?from=cviebrock/laravel-elasticsearch) for their 
+[JetBrains](https://www.jetbrains.com/?from=alexsaab/laravel-elasticsearch) for their 
 Open Source License Program ... and the excellent PHPStorm IDE, of course!
 
-[![JetBrains](./.github/jetbrains.svg)](https://www.jetbrains.com/?from=cviebrock/laravel-elasticsearch)
+[![JetBrains](./.github/jetbrains.svg)](https://www.jetbrains.com/?from=alexsaab/laravel-elasticsearch)
 
-Please use [Github](https://github.com/cviebrock/laravel-elasticsearch) for reporting bugs, 
+Please use [Github](https://github.com/alexsaab/laravel-elasticsearch) for reporting bugs, 
 and making comments or suggestions.
  
 See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute changes.
@@ -200,7 +200,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) for how to contribute changes.
 
 ## Copyright and License
 
-[laravel-elasticsearch](https://github.com/cviebrock/laravel-elasticsearch)
+[laravel-elasticsearch](https://github.com/alexsaab/laravel-elasticsearch)
 was written by [Colin Viebrock](http://viebrock.ca) and is released under the 
 [MIT License](LICENSE.md).
 

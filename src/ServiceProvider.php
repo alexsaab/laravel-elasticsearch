@@ -1,4 +1,4 @@
-<?php namespace Cviebrock\LaravelElasticsearch;
+<?php namespace Alexsaab\LaravelElasticsearch;
 
 use Elasticsearch\Client;
 use Illuminate\Container\Container;
@@ -11,7 +11,7 @@ use Laravel\Lumen\Application as LumenApplication;
 /**
  * Class ServiceProvider
  *
- * @package Cviebrock\LaravelElasticsearch
+ * @package Alexsaab\LaravelElasticsearch
  */
 class ServiceProvider extends BaseServiceProvider
 {
