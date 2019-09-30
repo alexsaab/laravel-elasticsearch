@@ -78,7 +78,6 @@ $app->configure('elasticsearch');
 Manually copy the configuration file to your application.
 
 
-
 ## Usage
 
 The `Elasticsearch` facade is just an entry point into the [ES client](https://github.com/elastic/elasticsearch-php),
